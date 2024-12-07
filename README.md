@@ -13,7 +13,7 @@ plexplaylistimport.exe /s[ServerURL] /x[X-Plex-Token] /i[SectionID] /p[Local Pla
 Example: 
 PlexPlaylistImport.exe /shttp://localhost:32400/ /sdsdsdsafyhwe8fgh78w474 /i3 /pC:\playlist\top40.m3u
 
-#License
+# License
 GNU General Public License v3.0
 
 https://github.com/zbourdeau/PlexPlaylistImport/edit/main/LICENCE
