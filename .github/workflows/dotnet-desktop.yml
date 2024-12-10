@@ -79,11 +79,15 @@ jobs:
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
+        
+    # Build
+    - name: Build
+      run: dotnet build
 
     # Upload the bits: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: Binary-Package
-        path: ${{ github.workspace }}\Release\
+        path: ${{ github.workspace }}\bin\
 
