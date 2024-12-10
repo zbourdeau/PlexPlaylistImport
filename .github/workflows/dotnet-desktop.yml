@@ -85,8 +85,8 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Binary Package
-        path: /Release/*.exe
-              /Release/*.dll
-              /Release/*.pdb
-              /Release/*.json
+        path: Release\*.exe
+              Release\*.dll
+              Release\*.pdb
+              Release\*.json
 
