@@ -57,8 +57,6 @@ jobs:
 
     env:
       Solution_Name: PlexPlaylistImport\PlexPlaylistImport.sln                                # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: PlexPlaylistImport\PlexPlaylistImport\PlexPlaylistImport.csproj      # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Project_Directory:                                                                     # Replace with the project directory relative to the solution, i.e. MyWpfApp.Package.
 
     steps:
     - name: Checkout
