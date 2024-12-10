@@ -85,5 +85,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Binary-Package
-        path: \
+        path: \PlexPlaylistImport\
 
