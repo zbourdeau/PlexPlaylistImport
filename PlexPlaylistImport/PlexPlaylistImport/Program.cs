@@ -1,30 +1,31 @@
-﻿namespace PlexPlaylistImport;
+namespace PlexPlaylistImport;
 
 using System;
 
 /// <summary>Class Program.</summary>
 class Program
 {
-    /// <summary>Gets or sets the server URL.</summary>
-    /// <value>The server URL.</value>
-    internal static string ServerURL { get; set; }
-
-    /// <summary>Gets or sets the x plex token.</summary>
-    /// <value>The x plex token.</value>
-    internal static string XPlexToken { get; set; }
-
-    /// <summary>Gets or sets the section identifier.</summary>
-    /// <value>The section identifier.</value>
-    internal static int SectionId {  get; set; }
-
-    /// <summary>Gets or sets the playlist path.</summary>
-    /// <value>The playlist path.</value>
-    internal static string PlaylistPath { get; set; }
 
     /// <summary>Defines the entry point of the application.</summary>
     /// <param name="args">The arguments.</param>
     static void Main(string[] args)
     {
+            /// <summary>Gets or sets the server URL.</summary>
+            /// <value>The server URL.</value>
+            string ServerURL = string.Empty;
+
+            /// <summary>Gets or sets the x plex token.</summary>
+            /// <value>The x plex token.</value>
+            string XPlexToken = string.Empty; ;
+
+            /// <summary>Gets or sets the section identifier.</summary>
+            /// <value>The section identifier.</value>
+            int SectionId = -1;
+
+            /// <summary>Gets or sets the playlist path.</summary>
+            /// <value>The playlist path.</value>
+            string PlaylistPath = string.Empty; ;
+
         if (args.Length == 0)
         {
             Help.Screen();
