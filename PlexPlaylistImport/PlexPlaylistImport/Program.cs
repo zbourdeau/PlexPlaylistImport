@@ -10,21 +10,17 @@ class Program
     /// <param name="args">The arguments.</param>
     static void Main(string[] args)
     {
-            /// <summary>Gets or sets the server URL.</summary>
-            /// <value>The server URL.</value>
+            /// <summary>the server URL.</summary>
             string ServerURL = string.Empty;
 
-            /// <summary>Gets or sets the x plex token.</summary>
-            /// <value>The x plex token.</value>
-            string XPlexToken = string.Empty; ;
+            /// <summary>the x plex token.</summary>
+            string XPlexToken = string.Empty;
 
-            /// <summary>Gets or sets the section identifier.</summary>
-            /// <value>The section identifier.</value>
+            /// <summary>the section identifier.</summary>
             int SectionId = -1;
 
-            /// <summary>Gets or sets the playlist path.</summary>
-            /// <value>The playlist path.</value>
-            string PlaylistPath = string.Empty; ;
+            /// <summary>the playlist path.</summary>
+            string PlaylistPath = string.Empty;
 
         if (args.Length == 0)
         {
