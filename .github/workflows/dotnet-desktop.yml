@@ -41,7 +41,7 @@ jobs:
 
     # Upload the bits: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Binary-Package
         path: ${{ github.workspace }}\PlexPlaylistImport\PlexPlaylistImport\bin\
