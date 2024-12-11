@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using System.Text;
 
@@ -54,7 +54,7 @@ namespace PlexPlaylistImport
                         break;
                     default:
                         result = $"Unexpected result of request ({response.StatusCode})";
-                        Console.WriteLine($"Errors occurred while processing request. {response.StatusCode}\n{response.RequestMessage.RequestUri.AbsoluteUri}");
+                        Console.WriteLine($"Errors occurred while processing request. {response.StatusCode}\n{response.RequestMessage?.RequestUri?.AbsoluteUri}");
                         break;
                 }
             }
