@@ -71,11 +71,11 @@ jobs:
         dotnet-version: 8.0.x
         
     - name: Install dependencies
-      run: dotnet restore Solution_Name
+      run: dotnet restore $env:Solution_Name
         
     # Build
     - name: Build
-      run: dotnet build Solution_Name
+      run: dotnet build $env:Solution_Name
 
     # Upload the bits: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
